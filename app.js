@@ -40,3 +40,28 @@ $(function(){
 // 消えるアニメーション
 
 
+$(function(){
+  $('.box6').on('click', function(){
+    $(this).slideUp();
+  });
+});
+
+// topに戻る
+$(function(){
+  $('#back a').on('click',function(event){
+    $('body,html').animate({
+      scrollTop;0
+    },800);
+    event.preventDefault();
+    // ↑aタグの画面左遷を無効化するメソッド
+  });
+});
+
+// ハンバーガーメニュー
+$(function(){
+  $('.menu-trigger').on('click', function(event){
+    $(this).toggleClass('active');
+    $('#sp-menu').fadeToggle();
+    event.preventDefault();
+  });
+});
