@@ -50,7 +50,7 @@ $(function(){
 $(function(){
   $('#back a').on('click',function(event){
     $('body,html').animate({
-      scrollTop;0
+      scrollTop: 0
     },800);
     event.preventDefault();
     // ↑aタグの画面左遷を無効化するメソッド
