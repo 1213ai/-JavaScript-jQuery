@@ -2,33 +2,60 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+  /* テキストの装飾を行いません */
 }
 
 header {
- width: 90%;
- padding: 15px 0;
- margin: 0 auto;
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header .heading {
   font-size: 32px;
 }
 
-.man-visual {
+/* ----------------------------------------------------
+メイン
+------------------------------------------------------*/
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* ----------------------------------------------------
+メインビジュアル
+------------------------------------------------------*/
+
+.main-visual {
   width: 100%;
   height: 300px;
 }
 
-.man-visual-content {
+.main-visual-content {
   width: 350px;
   height: 300px;
 }
 
-main {
+.main {
   width: 840px;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
 }
 
 .blog {
@@ -41,7 +68,18 @@ main {
   height: 1400px;
 }
 
+/* ----------------------------------------------------
+フッター
+------------------------------------------------------*/
+
 footer {
   width: 100%;
   height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
 }
