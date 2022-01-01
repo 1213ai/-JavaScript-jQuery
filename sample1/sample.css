@@ -56,27 +56,30 @@ li {
 ヘッダー
 ---------------------------- */
 
-#header {
+header {
   display: flex;
+  display: inline-block;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 
-#header ul {
+header ul {
   display: flex;
+  display: inline-block;
   padding: 10px 0;
 }
 
-#header li {
+header li {
+  display: inline-block;
   margin-left: 30px;
 }
 
-#header li a {
+header li a {
   color: #24292e;
 }
 
-#header li a:hover {
+header li a:hover {
   opacity: 0.7;
 }
 
@@ -84,11 +87,11 @@ li {
 mainvisual
 ---------------------------- */
 
-#mainvisual {
+mainvisual {
   margin-bottom: 80px;
 }
 
-#mainvisual img {
+mainvisual img {
   width: 100%;
   max-width: 1920px;
   height: 600px;
@@ -99,20 +102,20 @@ mainvisual
 About
 ---------------------------- */
 
-#about .content {
+about .content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#about img {
+about img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-right: 30px;
 }
 
-#about .text {
+about .text {
   text-align: left;
 }
 
@@ -120,12 +123,12 @@ About
 bicycle
 ---------------------------- */
 
-#bicycle ul {
+bicycle ul {
   display: flex;
   justify-content: space-between;
 }
 
-#bicycle li {
+bicycle li {
   width: 32%;
 }
 
@@ -133,8 +136,13 @@ bicycle
 footer
 ---------------------------- */
 
-#footer {
+footer {
   font-size: 0.5rem;
   padding: 10px 0;
   text-align: center;
 }
+
+/* ----------------------------
+SP
+---------------------------- */
+
