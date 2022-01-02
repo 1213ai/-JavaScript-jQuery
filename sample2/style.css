@@ -5,9 +5,20 @@
   color: #6c6b6b;
 }
 
+/* ----------------------------------------------------
+ヘッダー
+------------------------------------------------------*/
+
 a {
   text-decoration: none;
   /* テキストの装飾を行いません */
+}
+header,
+nav,
+h2,
+.main-visual,
+footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 
 header {
@@ -15,10 +26,25 @@ header {
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  /* 相対位置を指定する */
 }
 
 header .heading {
   font-size: 32px;
+}
+
+.social {
+  position: absolute;
+  /* ウィンドウ左上の位置を指定できる。
+  親要素にrelativeが指定されている場合は、親要素の左上が基準位置になる。 */
+  top: 22px;
+  right: 22px;
+}
+
+.social i {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 /* ----------------------------------------------------
@@ -228,4 +254,75 @@ footer {
 
 .footer-text {
   color: #fff;
+}
+
+/* ----------------------------------------------------
+レスポンジフ
+------------------------------------------------------*/
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+
+@media screen and (max-width: 425px) {
+  header {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .blog-image {
+    width: 49%;
+  }
+
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
+  }
 }
