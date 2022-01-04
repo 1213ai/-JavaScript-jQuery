@@ -6,3 +6,9 @@ $(function(){
     event.preventDefault();
   });
 });
+
+$(function(){
+  $('.nav-list-item').mousepver(function(){
+    $('.nav-list-item').css({'background-color': 'black'});
+  });
+});
