@@ -24,13 +24,14 @@
   align-items: center;
 }
 
-.head-left {
+.header-left {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.nav-right {
+.header-right {
   width: 50%;
   display: flex;
   justify-content: flex-end;
@@ -39,4 +40,40 @@
 .nav-list-item {
   list-style: none;
   display: inline-block;
+}
+
+main {
+  margin: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 300px;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .header-inner {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header-left {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-list-item {
+  }
+
+  .header-right {
+    justify-content: center;
+    width: 100%;
+  }
+
+  main {
+    margin: 300px;
+  }
 }
