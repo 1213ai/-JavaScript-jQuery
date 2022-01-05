@@ -42,10 +42,6 @@
   display: inline-block;
 }
 
-main {
-  margin: 300px;
-}
-
 @media screen and (max-width: 767px) {
   .header {
     height: 300px;
@@ -74,6 +70,5 @@ main {
   }
 
   main {
-    margin: 300px;
   }
 }

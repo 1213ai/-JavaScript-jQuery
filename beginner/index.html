@@ -73,19 +73,22 @@
         <!-- contentsコンテンツ -->
         <div class="section-inner">
           <h2 class="section-head">Contact</h2>
-          <div class="namae-contents">
-            <p class="section-text">NAME</p>
-            <div class="name-input"></div>
-          </div>
-          <div class="e-mail-contents">
-            <p class="section-text">E-mail</p>
-            <div class="e-mail-input"></div>
-          </div>
-          <div class="message-contents">
-            <p class="section-text">MESSAGE</p>
-            <div class="message-input"></div>
-          </div>
-          <div class="send">送信</div>
+          <form action="#" method="post">
+            <table>
+              <tr>
+                <th>NAME</th>
+                <td><input type="text" name="お名前"></td>
+              </tr>
+              <tr>
+                <th>E-mail</th>
+                <td><input type="e-mail" name="メールアドレス"></td>
+              </tr>
+              <tr>
+                <th class="message-box">MESSAGE</th>
+                <td><textarea name="メッセージ" cols="30" rows="10"></textarea></td>
+              </tr>
+            </table>
+          </form>
         </div>
      </div>
     </section>
