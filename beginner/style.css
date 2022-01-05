@@ -2,5 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
+}
+
+/* ヘッダー */
+
+.header {
+  padding: 0 20px;
+}
+
+.header-inner {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
 }
